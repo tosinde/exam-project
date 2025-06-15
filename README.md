@@ -46,7 +46,7 @@ sudo cp index.html styles.css /usr/share/nginx/html/
 1. Go to [https://duckdns.org](https://duckdns.org)
 2. Create a subdomain (e.g. `dalamuesther`)
 3. Noted the DuckDNS token
-4. Point it to your EC2 Public IP - **108.129.227.136**
+4. Points it to my EC2 Public IP - **108.129.227.136**
 
 ---
 
@@ -165,7 +165,7 @@ git push -u origin main
 
 The site is now live at:
 
-[https://dalamuesther.duckdns.org](https://dalamuesther.duckdns.org)
+(http://dalamuesther.duckdns.org/)
 With HTTPS and GitHub version control.
 
 ---
