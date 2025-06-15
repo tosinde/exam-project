@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Future of On-Demand Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1>Esther Dalamu</h1>
+    <h2>Lead Cloud Engineer</h2>
+  </header>
+
+  <main class="container">
+    <!-- Project Title -->
+    <section class="card fade-in delay-1" onclick="highlightCard(this)">
+      <h3>The Future of On-Demand Professional Services (LagosFix) </h3>
+      <p>
+        A modern platform that connects homeowners with verified and trusted electricians, plumbers, cleaners, and technicians—making service access as easy as ordering a ride.  Revolutionizing home services in Lagos with verified professionals, instant booking, and quality guarantees. No more stress finding trustworthy artisans. Finding reliable service professionals in Lagos shouldn’t feel like a gamble.
+        Our platform connects customers with verified electricians, plumbers, cleaners, and more — 
+        all vetted for quality and trust. With real-time booking and a commitment to professionalism,
+        we’re redefining the home services industry in Nigeria.
+      </p>
+    </section>
+
+    <!-- Pitch -->
+    <section class="card fade-in delay-2">
+      <h3>Why This Project?</h3>
+      <p>
+        In Lagos, it’s difficult to find reliable artisans. Our platform solves this with identity verification, quality ratings, and instant bookings. It’s the Uber for trusted home services—backed by local insights.
+      </p>
+    </section>
+
+    <!-- Bio -->
+    <section class="card fade-in delay-3">
+      <h3>About Me</h3>
+      <p>
+        Esther Dalamu is a third-year Systems Engineering student at the University of Lagos and is currently learning Cloud Engineering at AltSchool Africa. She is gaining experience in deploying scalable applications on AWS, she has a passion 
+        for building tech solutions that solve real urban challenges. She brings experience from 
+        previous IoT, logistics, and DevOps projects into this mission to streamline daily life for 
+        millions in Lagos. With experience building scalable platforms at companies like AWS and Google, I'm bringing technical expertise to solve Lagos' service reliability problems. My background in distributed systems ensures LagosFix can handle city-wide demand. <br> She's a Cloud & DevOps enthusiast eager for hands-on experience deploying full-stack applications using AWS, Ubuntu servers, and Nginx.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="card fade-in delay-4">
+      <h3>Contact Me</h3>
+      <form onsubmit="handleFormSubmit(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="response-message" style="display:none; margin-top: 10px; font-weight: 600;"></p>
+    </section>
+  </main>
+
+  <footer class="fade-in delay-5">
+    <p>&copy; 2025 Esther Dalamu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function highlightCard(element) {
+      element.classList.toggle("highlighted");
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const response = document.getElementById("response-message");
+      response.textContent = "Thank you! Your message has been sent.";
+      response.style.display = "block";
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
