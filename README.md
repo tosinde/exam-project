@@ -1,3 +1,4 @@
+![rendered-page-1](https://github.com/user-attachments/assets/ca2816e7-9aef-4fe2-9afb-d466395c4fa3)
 AltSchool Second Semester Examination Project for Cloud Engineering.
 
 This project documents the process of deploying a website on an AWS EC2 instance using Nginx, DuckDNS, and securing it with a free SSL certificate from Let's Encrypt.
